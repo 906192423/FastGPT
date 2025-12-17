@@ -20,6 +20,7 @@ export type TeamStandardSubPlanItemType = {
   websiteSyncPerDataset?: number;
   auditLogStoreDuration?: number;
   ticketResponseTime?: number;
+  customDomain?: number;
 
   // Custom plan specific fields
   priceDescription?: string;
@@ -42,6 +43,7 @@ export type SubPlanType = {
   [SubTypeEnum.standard]?: StandSubPlanLevelMapType;
   planDescriptionUrl?: string;
   appRegistrationUrl?: string;
+  communitySupportTip?: string;
   [SubTypeEnum.extraDatasetSize]: {
     price: number;
   };
@@ -73,6 +75,7 @@ export type TeamSubSchema = {
   appRegistrationCount?: number;
   auditLogStoreDuration?: number;
   ticketResponseTime?: number;
+  customDomain?: number;
 
   totalPoints: number;
   surplusPoints: number;

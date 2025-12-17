@@ -107,7 +107,7 @@ Please fill the AuditEventEnum and audit function is added to the ts, and on the
 
 ```sh
 # Docker cmd: Build image, not proxy
-docker build -f ./projects/app/Dockerfile -t registry.cn-hangzhou.aliyuncs.com/fastgpt/fastgpt:v4.8.1 . --build-arg name=app
+docker build -f ./projects/app/Dockerfile -t jd/fastgpt:v4.14.2 . --build-arg name=app
 # Make cmd: Build image, not proxy
 make build name=app image=registry.cn-hangzhou.aliyuncs.com/fastgpt/fastgpt:v4.8.1
 
