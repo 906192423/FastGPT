@@ -4,12 +4,10 @@ import { useForm } from 'react-hook-form';
 import { LoginPageTypeEnum } from '@/web/support/user/login/constants';
 import { postLogin, getPreLogin } from '@/web/support/user/api';
 import type { LoginSuccessResponse } from '@/global/support/api/userRes';
-import { useToast } from '@fastgpt/web/hooks/useToast';
 import { useSystemStore } from '@/web/common/system/useSystemStore';
 import { useTranslation } from 'next-i18next';
 import FormLayout from './FormLayout';
 import { useRequest2 } from '@fastgpt/web/hooks/useRequest';
-import PolicyTip from './PolicyTip';
 import { useSearchParams } from 'next/navigation';
 import { UserErrEnum } from '@fastgpt/global/common/error/code/user';
 import { useRouter } from 'next/router';
@@ -144,7 +142,7 @@ const LoginForm = ({ setPageType, loginSuccess }: Props) => {
             })}
           ></Input>
         </FormControl>
-        <PolicyTip isCenter={false} />
+        {/*<PolicyTip isCenter={false} />*/}
 
         <Button
           type="submit"
